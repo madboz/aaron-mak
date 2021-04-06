@@ -11,12 +11,12 @@
 }
 
 @font-face {
-	font-family: "mrv grot";
-	src: url("assets/fonts/mrv-grot.ttf") format("ttf");
+	font-family: "MRV Grot Medium Regular";
+	src: url("../fonts/mrv-grot.ttf") format("truetype");
 }
 
 body {
-	font-family: "mrv grot";
+	font-family: "MRV Grot Medium Regular";
 	font-size: 14px;
 	line-height: 17.5px;
 	color: var(--text-color);
@@ -43,21 +43,31 @@ a {
 }
 
 .header {
-	padding: 12px;
+	position: fixed;
+	width: 100vw;
+	padding: 10px;
 	background: white;
 	filter: drop-shadow(0px 0px 10px #D1D0FF);
 	display: grid;
 	grid-template-columns: 90px auto 145px 145px;
-	column-gap: 12px;
+	column-gap: 10px;
 	z-index: 1;
 }
 
 .header__icon {
-	width: 68px;
+	height: 65px;
+	width: 65px;
+	object-fit: contain;
 }
 
 .header__bio {
 	max-width: 300px;
+}
+
+.bio__name {
+	text-decoration: underline dotted var(--text-color);
+	text-underline-offset: 2px;
+	text-decoration-thickness: .5px;
 }
 
 .button--left {
@@ -81,21 +91,23 @@ a {
 	background: linear-gradient(90deg, rgba(209,208,255,1) 0%, rgba(209,208,255,0.007440476190476164) 100%);
 }
 
-.menu__item:hover .button--middle {
+.menu__item:hover .button--middle, .menu__item--active .button--middle {
 	background: var(--highlight-dark);
 	color: white;
 }
 
-.menu__item:hover .button--left {
+.menu__item:hover .button--left, .menu__item--active .button--left {
 	background: linear-gradient(90deg, rgba(73,69,245,0) 0%, rgba(73,69,245,1) 100%);
 }
 
-.menu__item:hover .button--right {
+.menu__item:hover .button--right, .menu__item--active .button--right {
 	background: linear-gradient(90deg, rgba(73,69,245,1) 0%, rgba(73,69,245,0) 100%);
 }
 
 .cam {
-	height: calc(100vh - 94px);
+	top: 94px;
+	height: 100vh;
+	width: 100vw;
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
@@ -103,8 +115,21 @@ a {
 
 .main {
 	background: white;
-	height: calc(100vh - 94px);
-	padding: 12px;
+	height: 100vh;
+	padding-top: 102px;
+	padding-left: 12px;
+}
+
+.main--1-of-3 {
+
+}
+
+.main--2-of-3 {
+
+}
+
+.main--3-of-3 {
+
 }
 
 .main__headline {
