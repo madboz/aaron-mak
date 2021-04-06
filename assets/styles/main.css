@@ -13,6 +13,8 @@
 @font-face {
 	font-family: "MRV Grot Medium Regular";
 	src: url("../fonts/mrv-grot.ttf") format("truetype");
+	font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -113,11 +115,14 @@ a {
 	z-index: 0;
 }
 
-.main {
+.main { /* change this to "grid" ? */
 	background: white;
 	height: 100vh;
 	padding-top: 102px;
 	padding-left: 12px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 10px;
 }
 
 .main--1-of-3 {
