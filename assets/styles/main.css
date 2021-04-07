@@ -4,10 +4,10 @@
 }
 
 :root {
-	--text-color: #4E534A;
-	--highlight: #D1D0FF;
-	--highlight-dark: #4945F5;
-	--highlight-bright: #D7FF64;
+	--main-color: #4E534A;
+	--highlight-1-light: #D1D0FF;
+	--highlight-1-dark: #4945F5;
+	--highlight-2: #D7FF64;
 }
 
 @font-face {
@@ -21,14 +21,18 @@ body {
 	font-family: "MRV Grot Medium Regular";
 	font-size: 14px;
 	line-height: 17.5px;
-	color: var(--text-color);
-	background: var(--text-color);
+	color: var(--main-color);
 }
 
 h1 {
 	font-size: 25px;
 	line-height: 31.25px;
 	font-weight: normal;
+	margin: 13px 0;
+}
+
+p {
+	max-width: 300px;
 }
 
 ul {
@@ -37,11 +41,11 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--text-color);
+	color: var(--main-color);
 }
 
 ::selection {
-	background: var(--highlight-bright);
+	background: var(--highlight-2);
 }
 
 .header {
@@ -49,11 +53,11 @@ a {
 	width: 100vw;
 	padding: 10px;
 	background: white;
-	filter: drop-shadow(0px 0px 10px #D1D0FF);
+	filter: drop-shadow(0 0 10px rgba(73, 69, 245, .3));
 	display: grid;
 	grid-template-columns: 90px auto 145px 145px;
 	column-gap: 10px;
-	z-index: 1;
+	z-index: 2;
 }
 
 .header__icon {
@@ -66,13 +70,13 @@ a {
 	max-width: 300px;
 }
 
-.bio__name {
-	text-decoration: underline dotted var(--text-color);
+.link {
+	text-decoration: underline dotted var(--main-color);
 	text-underline-offset: 2px;
 	text-decoration-thickness: .5px;
 }
 
-.button--left {
+.button-left {
 	display: inline-block;
 	width: 14px;
 	height: 100%;
@@ -80,12 +84,12 @@ a {
 	background: linear-gradient(90deg, rgba(209,208,255,0.007440476190476164) 0%, rgba(209,208,255,1) 100%);
 }
 
-.button--middle {
+.button-middle {
 	display: inline-block;
-	background: var(--highlight); 
+	background: var(--highlight-1-light); 
 }
 
-.button--right {
+.button-right {
 	display: inline-block;
 	width: 14px;
 	height: 100%;
@@ -93,50 +97,68 @@ a {
 	background: linear-gradient(90deg, rgba(209,208,255,1) 0%, rgba(209,208,255,0.007440476190476164) 100%);
 }
 
-.menu__item:hover .button--middle, .menu__item--active .button--middle {
-	background: var(--highlight-dark);
+.menu__item:hover .button-middle, .menu__item--active .button-middle {
+	background: var(--highlight-1-dark);
 	color: white;
 }
 
-.menu__item:hover .button--left, .menu__item--active .button--left {
+.menu__item:hover .button-left, .menu__item--active .button-left {
 	background: linear-gradient(90deg, rgba(73,69,245,0) 0%, rgba(73,69,245,1) 100%);
 }
 
-.menu__item:hover .button--right, .menu__item--active .button--right {
+.menu__item:hover .button-right, .menu__item--active .button-right {
 	background: linear-gradient(90deg, rgba(73,69,245,1) 0%, rgba(73,69,245,0) 100%);
 }
 
 .cam {
-	top: 94px;
 	height: 100vh;
 	width: 100vw;
+
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
+	background: var(--main-color);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
 
-.main { /* change this to "grid" ? */
-	background: white;
+.main {
+	position: absolute;
+	top: 0;
+	left: 0;
+
 	height: 100vh;
-	padding-top: 102px;
-	padding-left: 12px;
+	width: 100vw;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 10px;
+	column-gap: 0px;
+
+	z-index: 1;
 }
 
-.main--1-of-3 {
-
+.main--1-col, .main--2-col, .main--3-col {
+	padding: 106px 13px;
 }
 
-.main--2-of-3 {
-
+.main--1-col {
+	background: papayawhip;
+	grid-column: 1;
 }
 
-.main--3-of-3 {
-
+.main--2-col {
+	background: green;
+	grid-column: 1 / span 2;
 }
 
-.main__headline {
-	padding: 20px 0;
+.main--3-col {
+	background: dodgerblue;
+	grid-column: 1 / span 3;
+}
+
+.section {
+	margin-bottom: 50px;
 }
