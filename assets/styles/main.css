@@ -31,6 +31,12 @@ h1 {
 	margin: 13px 0;
 }
 
+h2 {
+	font-size: 14px;
+	line-height: 17.5px;
+	margin: 13px 0;
+}
+
 p {
 	max-width: 300px;
 }
@@ -74,6 +80,10 @@ a {
 	text-decoration: underline dotted var(--main-color);
 	text-underline-offset: 2px;
 	text-decoration-thickness: .5px;
+}
+
+.link--alias {
+	cursor: alias;
 }
 
 .button-left {
@@ -161,4 +171,15 @@ a {
 
 .section {
 	margin-bottom: 50px;
+}
+
+.section--2-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10px;
+}
+
+ol > li {
+	max-width: 175px;
+	margin-bottom: 13px;
 }
