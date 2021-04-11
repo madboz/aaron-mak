@@ -1,6 +1,7 @@
 var dataDate = document.getElementsByClassName("data__date")[0];
 var dataTime = document.getElementsByClassName("data__time")[0];
 var cam = document.getElementsByClassName("cam")[0];
+var header = document.getElementsByClassName("header")[0];
 
 updateEverything();
 setInterval(updateEverything, 1000);
@@ -12,7 +13,7 @@ function updateEverything() {
     updateDate(d);
     updateCam(d);
 
-    console.log("got here");
+    console.log(header);
 }
 
 function updateTime(d) {
@@ -38,6 +39,7 @@ function updateCam(d) {
 
 	if (d.hours >= 19 && d.hours < 20) {
 		cam.style.backgroundImage = "url('assets/images/cam/sunset.png')";
+        header.classList.add("sunset");
 	}
 
 	if (d.hours >= 20 && d.hours <= 24) {
