@@ -1,0 +1,57 @@
+.timeline {
+	width: 100%;
+	display: block;
+}
+
+.timeline > * {
+	display: flex;
+}
+
+.timeline__year{
+	width: 100%;
+}
+
+.timeline-year__date {
+	background: yellow;
+	height: 3em;
+	width: 5em;
+}
+
+.timeline-year__achievements {
+	background: hotpink;
+	padding: 3em 0;
+	border-left: 2px solid var(--main-color);
+	flex-grow: 1;
+}
+
+.achievements__education {
+	background: lavenderblush;
+	width: 100%;
+	margin-top: 1em;
+	padding: 0 1em;
+}
+
+.achievements__award {
+	background: papayawhip;
+	width: 100%;
+	margin-top: 1em;
+	padding: 0 1em;
+}
+
+.timeline-element__left-col {
+
+}
+
+.timeline-element__right-col {
+
+}
+
+.timeline-element__date {
+
+}
+
+.timeline-element__ 
+
+.bullet-point {
+
+}

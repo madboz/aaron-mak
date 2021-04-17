@@ -241,9 +241,9 @@ ol > li {
 	color: white;
 }
 
-.thumbnail {
+/*.thumbnail {
 	border: #efefef solid .5px;
-}
+}*/
 
 .thumbnail__image, .thumbnail__image-overlay, .thumbnail__title {
 	width: 100%;
@@ -274,18 +274,18 @@ ol > li {
 }
 
 .thumbnail__image-container {
-	height: 40em;
+	height: 33vw;
 	display: flex;
 	background-position: center;
 	background-size: cover;
 }
 
 .bfa-2021 {
-	background-image: url("../../assets/images/content/work/thumbnail-BFA-2021.jpeg");
+	background-image: url("../../assets/images/content/work/thumbnail-BFA-2021.jpg");
 }
 
 .knitwear {
-	background-image: url("../../assets/images/content/work/thumbnail-knitwear.jpeg");
+	background-image: url("../../assets/images/content/work/thumbnail-knitwear.jpg");
 }
 
 .amxgv {
@@ -297,7 +297,7 @@ ol > li {
 }
 
 .archive {
-	background-image: url("../../assets/images/content/work/thumbnail-archive.jpeg");
+	background-image: url("../../assets/images/content/work/thumbnail-archive.jpg");
 }
 
 .sunset {
