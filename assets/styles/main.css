@@ -56,9 +56,9 @@ a {
 	background: var(--highlight-2);
 }
 
-.cursor {
+/*.cursor {
   cursor: url("assets/images/cursors/default.svg");
-}
+}*/
 
 .header {
 	position: fixed;

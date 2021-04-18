@@ -12,8 +12,6 @@ function updateEverything() {
     updateTime(d);
     updateDate(d);
     updateCam(d);
-
-    console.log(header);
 }
 
 function updateTime(d) {
