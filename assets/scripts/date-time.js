@@ -44,6 +44,7 @@ function updateCam(d) {
 
 	if (d.hours >= 20 && d.hours <= 24) {
 		cam.style.backgroundImage = "url('assets/images/cam/night.png')";
+        header.classList.remove("sunset");
 	}
 }
 
