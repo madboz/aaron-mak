@@ -241,10 +241,6 @@ ol > li {
 	color: white;
 }
 
-/*.thumbnail {
-	border: #efefef solid .5px;
-}*/
-
 .thumbnail__image, .thumbnail__image-overlay, .thumbnail__title {
 	width: 100%;
 }
