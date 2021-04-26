@@ -1,1 +1,1 @@
-# madboz.github.io/am-portfolio/
+# am-portfolio
