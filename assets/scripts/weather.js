@@ -13,7 +13,7 @@ function parseWeather(w) {
 
 
 $.ajax({
-	url : "http://api.openweathermap.org/data/2.5/weather?id=6087456&units=imperial&appid=a474cad0fb5979d443c1231403b64910",
+	url : "https://api.openweathermap.org/data/2.5/weather?id=6087456&units=imperial&appid=a474cad0fb5979d443c1231403b64910",
 	dataType : "jsonp",
 	success : function(w) { 
 		parseWeather(w);
