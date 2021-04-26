@@ -1,5 +1,5 @@
-var dataDate = document.getElementsByClassName("data__date")[0];
-var dataTime = document.getElementsByClassName("data__time")[0];
+var headerDate = document.getElementsByClassName("data__date")[0];
+var headerTime = document.getElementsByClassName("data__time")[0];
 var cam = document.getElementsByClassName("cam")[0];
 var header = document.getElementsByClassName("header")[0];
 
@@ -15,11 +15,11 @@ function updateEverything() {
 }
 
 function updateTime(d) {
-	dataTime.innerText = d.hours + ":" + d.minutes + ":" + d.seconds;
+	headerTime.innerText = d.hours + ":" + d.minutes + ":" + d.seconds;
 }
 
 function updateDate(d) {
-	dataDate.innerText = d.day + ". " + d.month + ". " + d.date + ", " + d.year;
+	headerDate.innerText = d.day + ". " + d.month + ". " + d.date + ", " + d.year;
 }
 
 function updateCam(d) {

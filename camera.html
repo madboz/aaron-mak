@@ -1,284 +1,299 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Camera</title>
+<!doctype html>
+<html lang="en-us">
+<head>
 
-        <link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-        <link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/x-icon">  
-    </head>
-    <body>
-      	<header class="header">
-      		<div class="header__icon-container">
-      			<a href="index.html"><img class="header__icon" src="assets/images/icons/camera.png"></a>
-      		</div>
-      		<div class="header__bio-container">
-      			<p class="header__bio">
-      				<a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.
-      			</p>
-      		</div>
-      		<div class="header__data">
-      			<ul>
-      				<li class="data__date">Date</li>
-      				<li class="data__time">Time</li>
-      				<li class="data__temp">11º C / 52º F</li>
-      				<li class="data__weather">Overcast</li>
-      			</ul>
-      		</div>
-      		<div class="header__menu">
-      			<ul>
-              <li>
-                <a class="menu__item" href="work.html">
-                  <div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
-                </a>
-              </li>
-              <li>
-                <a class="menu__item" href="press.html">
-                  <div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
-                </a>
-              </li>
-              <li>
-                <a class="menu__item--active" href="camera.html">
-                  <div class="button-left">.</div><div class="button-middle">Camera</div><div class="button-right">.</div>
-                </a>
-              </li>
-              <li>
-                <a class="menu__item" href="info.html">
-                  <div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
-                </a>
-              </li>
-            </ul>
-      		</div>
-      	</header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      	<main class="main">
-            <div class="cam"></div>
-            <div class="modal--3-col">
-                <div class="headline">
-                    <h1>Camera roll</h1>
-                    <div class="close-container">
-                        <a href="index.html">
-                            <img class="close" src="assets/images/ui/close.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="photo-dump">
-                    <img class="full-width" src="assets/images/content/camera/camera-1.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-2.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-3.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-4.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-5.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-6.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-7.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-8.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-9.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-10.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-11.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-12.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-13.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-14.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-15.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-16.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-17.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-18.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-19.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-20.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-21.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-22.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-23.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-24.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-25.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-26.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-27.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-28.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-29.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-30.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-31.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-32.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-33.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-34.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-35.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-36.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-37.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-38.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-39.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-40.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-41.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-42.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-43.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-44.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-45.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-46.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-47.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-48.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-49.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-50.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-51.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-52.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-53.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-54.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-55.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-56.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-57.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-58.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-59.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-60.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-61.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-62.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-63.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-64.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-65.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-66.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-67.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-68.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-69.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-70.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-71.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-72.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-73.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-74.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-75.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-76.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-77.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-78.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-79.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-80.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-81.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-82.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-83.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-84.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-85.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-86.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-87.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-88.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-89.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-90.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-91.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-92.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-93.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-94.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-95.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-96.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-97.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-98.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-99.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-100.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-101.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-102.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-103.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-104.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-105.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-106.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-107.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-108.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-109.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-110.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-111.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-112.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-113.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-114.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-115.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-116.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-117.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-118.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-119.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-120.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-121.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-122.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-123.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-124.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-125.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-126.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-127.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-128.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-129.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-130.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-131.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-132.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-133.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-134.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-135.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-136.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-137.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-138.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-139.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-140.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-141.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-142.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-143.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-144.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-145.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-146.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-147.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-148.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-149.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-150.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-151.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-152.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-153.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-154.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-155.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-156.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-157.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-158.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-159.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-160.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-161.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-162.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-163.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-164.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-165.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-166.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-167.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-168.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-169.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-170.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-171.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-172.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-173.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-174.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-175.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-176.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-177.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-178.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-179.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-180.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-181.png">
-                    <img class="full-width" src="assets/images/content/camera/camera-182.jpg">
-                    <img class="full-width" src="assets/images/content/camera/camera-183.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-184.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-185.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-186.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-187.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-188.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-189.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-190.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-191.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-192.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-193.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-194.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-195.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-196.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-197.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-198.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-199.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-200.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-201.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-202.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-203.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-204.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-205.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-206.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-207.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-208.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-209.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-210.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-211.jpeg">
-                    <img class="full-width" src="assets/images/content/camera/camera-212.jpeg">
-                </div>
-            </div>
-        </main>
+<title>Camera roll | Aaron Mak</title>
 
-      	<script src="assets/scripts/date-time.js"></script>
-    </body>
+<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/x-icon"> 
+
+</head>
+<body>
+
+<header class="header">
+	<div class="header__icon-container">
+		<a href="index.html">
+			<img class="header__icon" src="assets/images/icons/camera.png">
+		</a>
+	</div>
+
+	<div class="header__bio-container">
+		<p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
+	</div>
+
+	<div class="header__data">
+		<ul>
+			<li class="data__date">Mon. Jan. 00, 0000</li>
+			<li class="data__time">00:00:00</li>
+			<li class="data__temp">0° C / 0° F</li>
+			<li class="data__cond">Clear</li>
+		</ul>
+	</div>
+
+	<div class="header__menu">
+		<ul>
+			<li>
+				<a class="menu__item" href="work.html">
+					<div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
+				</a>
+			</li>
+			<li>
+				<a class="menu__item" href="press.html">
+					<div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
+				</a>
+			</li>
+			<li>
+				<a class="menu__item--active" href="camera.html">
+					<div class="button-left">.</div><div class="button-middle">Camera</div><div class="button-right">.</div>
+				</a>
+			</li>
+			<li>
+				<a class="menu__item" href="info.html">
+					<div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<main class="main">
+	<div class="modal--3-col">
+		<div class="headline">
+			<h1>Camera roll</h1>
+			<div class="close-container">
+				<a href="index.html">
+					<img class="close" src="assets/images/ui/close.png">
+				</a>
+			</div>
+		</div>
+
+		<div class="photo-dump">
+			<img class="full-width" src="assets/images/content/camera/camera-1.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-2.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-3.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-4.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-5.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-6.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-7.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-8.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-9.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-10.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-11.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-12.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-13.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-14.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-15.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-16.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-17.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-18.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-19.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-20.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-21.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-22.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-23.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-24.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-25.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-26.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-27.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-28.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-29.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-30.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-31.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-32.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-33.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-34.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-35.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-36.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-37.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-38.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-39.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-40.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-41.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-42.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-43.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-44.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-45.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-46.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-47.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-48.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-49.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-50.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-51.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-52.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-53.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-54.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-55.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-56.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-57.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-58.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-59.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-60.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-61.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-62.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-63.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-64.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-65.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-66.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-67.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-68.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-69.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-70.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-71.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-72.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-73.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-74.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-75.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-76.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-77.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-78.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-79.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-80.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-81.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-82.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-83.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-84.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-85.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-86.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-87.png">
+			<img class="full-width" src="assets/images/content/camera/camera-88.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-89.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-90.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-91.png">
+			<img class="full-width" src="assets/images/content/camera/camera-92.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-93.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-94.png">
+			<img class="full-width" src="assets/images/content/camera/camera-95.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-96.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-97.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-98.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-99.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-100.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-101.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-102.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-103.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-104.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-105.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-106.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-107.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-108.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-109.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-110.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-111.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-112.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-113.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-114.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-115.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-116.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-117.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-118.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-119.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-120.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-121.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-122.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-123.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-124.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-125.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-126.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-127.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-128.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-129.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-130.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-131.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-132.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-133.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-134.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-135.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-136.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-137.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-138.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-139.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-140.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-141.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-142.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-143.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-144.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-145.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-146.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-147.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-148.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-149.png">
+			<img class="full-width" src="assets/images/content/camera/camera-150.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-151.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-152.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-153.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-154.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-155.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-156.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-157.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-158.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-159.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-160.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-161.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-162.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-163.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-164.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-165.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-166.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-167.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-168.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-169.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-170.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-171.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-172.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-173.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-174.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-175.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-176.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-177.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-178.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-179.png">
+			<img class="full-width" src="assets/images/content/camera/camera-180.png">
+			<img class="full-width" src="assets/images/content/camera/camera-181.png">
+			<img class="full-width" src="assets/images/content/camera/camera-182.jpg">
+			<img class="full-width" src="assets/images/content/camera/camera-183.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-184.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-185.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-186.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-187.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-188.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-189.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-190.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-191.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-192.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-193.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-194.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-195.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-196.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-197.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-198.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-199.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-200.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-201.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-202.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-203.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-204.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-205.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-206.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-207.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-208.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-209.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-210.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-211.jpeg">
+			<img class="full-width" src="assets/images/content/camera/camera-212.jpeg">
+		</div>
+  </div>
+</main>
+
+<div class="cam"></div>
+
+<script src="assets/scripts/jquery-3.6.0.min.js"></script>
+<script src="assets/scripts/date-time.js"></script>
+<script src="assets/scripts/weather.js"></script>
+<script src="assets/scripts/shuffle.js"></script>
+
+</body>
 </html>
