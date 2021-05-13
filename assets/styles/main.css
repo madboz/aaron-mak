@@ -201,8 +201,13 @@ ol > li {
 	margin-bottom: 1.25em;
 }
 
+ul.work__list > li {
+	margin-bottom: 1.25em;
+	list-style: circle inside url("../images/ui/bullet.svg");
+}
+
 .section > p {
-	padding-bottom: 1.25em;
+	padding-bottom: .75em;
 }
 
 .close {
@@ -275,26 +280,6 @@ ol > li {
 	display: flex;
 	background-position: center;
 	background-size: cover;
-}
-
-.bfa-2021 {
-	background-image: url("../../assets/images/content/work/thumbnail-BFA-2021.jpg");
-}
-
-.knitwear {
-	background-image: url("../../assets/images/content/work/thumbnail-knitwear.jpg");
-}
-
-.amxgv {
-	background-image: url("../../assets/images/content/work/thumbnail-amxgv.jpg");
-}
-
-.weaving {
-	background-image: url("../../assets/images/content/work/thumbnail-amxgv-2.jpg");
-}
-
-.archive {
-	background-image: url("../../assets/images/content/work/thumbnail-archive.jpg");
 }
 
 .sunset {
