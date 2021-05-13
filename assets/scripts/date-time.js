@@ -32,7 +32,7 @@ function updateCam(d) {
 	}
 
 	if (d.hours >= 12 && d.hours < 19) {
-		cam.style.backgroundImage = "url('assets/images/cam/afternoon.mp4')";
+		// cam.style.backgroundImage = "url('assets/images/cam/afternoon.mp4')";
 	}
 
 	if (d.hours >= 19 && d.hours < 20) {
