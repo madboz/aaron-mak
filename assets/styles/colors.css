@@ -1,0 +1,38 @@
+.spring--day {
+	color: #4E534A;
+	background: #FFFFFF;
+}
+
+.spring--night {
+	color: #FFFFFF;
+	background: #242227;
+}
+
+path.spring--night {
+	fill: #FFFFFF;
+}
+
+.modal .spring--day {
+	background: #4E534A;
+	color: #FFFFFF;
+}
+
+.modal--1-col .spring--night {
+	background: ;
+	color: ;
+}
+
+.summer {
+	color: ;
+	background: ;
+}
+
+.fall {
+	color: ;
+	background: ;
+}
+
+.winter {
+	color: ;
+	background: ;
+}
