@@ -400,7 +400,7 @@ video {
 	}
 
 	.header {
-		grid-template-columns: 90px auto 145px 145px;
+		grid-template-columns: 90px auto 145px 90px;
 	}
 
 	.hide-on-mobile {
