@@ -41,21 +41,21 @@ function updateCam(d) {
 
 	if ((d.hours >= 20 && d.hours <= 24) || (d.hours >= 0 && d.hours < 6)) {
         header.classList.remove("sunset");
-        header.classList.add("spring--night");
-        links[0].classList.add("spring--night");
-        links[0].style.textDecorationColor = "#FFFFFF";
+        // header.classList.add("spring--night");
+        // links[0].classList.add("spring--night");
+        // links[0].style.textDecorationColor = "#FFFFFF";
         cam.style.backgroundImage = "url('assets/images/cam/night.gif')";
 
-        for (var i = links.length - 1; i >= 0; i--) {
-            links[i].classList.add("spring--night");
-            links[i].style.textDecorationColor = "#FFFFFF";
-        }
+        // for (var i = links.length - 1; i >= 0; i--) {
+        //     links[i].classList.add("spring--night");
+        //     links[i].style.textDecorationColor = "#FFFFFF";
+        // }
 
-        for (var j = modals.length - 1; j >= 0; j--) {
-            modals[j].classList.add("spring--night");
-        }
+        // for (var j = modals.length - 1; j >= 0; j--) {
+        //     modals[j].classList.add("spring--night");
+        // }
 
-        console.log(paths)
+        // console.log(paths)
 
         // for (var n = paths.length - 1; n >= 0; n--) {
         //     paths[n].classList.add("spring--night");
