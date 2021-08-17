@@ -14,14 +14,14 @@
 
 body {
 	font-family: "MRV Grot Medium Regular";
-	font-size: 12px;
-	line-height: 1.25em;
+	font-size: 11px;
+	line-height: 1.35em;
 	color: var(--main-color);
 }
 
 h1 {
 	font-size: 2em;
-	line-height: 1.25em;
+	line-height: 1.35em;
 	font-weight: normal;
 	font-style: normal;
 	margin-bottom: .5em;
@@ -29,7 +29,7 @@ h1 {
 
 h2 {
 	font-size: 1em;
-	line-height: 1.25em;
+	line-height: 1.35em;
 	font-weight: normal;
 	font-style: normal;
 	margin-bottom: 1em;
@@ -37,7 +37,7 @@ h2 {
 
 p {
 	font-size: 1em;
-	line-height: 1.25em;
+	line-height: 1.35em;
 	font-weight: normal;
 	font-style: normal;
 	max-width: 21em;
@@ -84,7 +84,7 @@ a {
 
 .link {
 	text-decoration: underline dotted var(--main-color);
-	text-underline-offset: 2px;
+	text-underline-offset: 1px;
 	text-decoration-thickness: .5px;
 }
 
