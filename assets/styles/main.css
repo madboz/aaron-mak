@@ -1,8 +1,9 @@
 :root {
-	--main-color: #4E534A;
-	--highlight-1-light: #D1D0FF;
-	--highlight-1-dark: #4945F5;
-	--highlight-2: #D7FF64;
+	--main-color: #5F250F;
+	--highlight-1-light: #E5E5E5;
+	--highlight-1-dark: #787680;
+	--highlight-2: #E3DABB;
+	--main-background-color: snow;
 }
 
 @font-face {
@@ -14,7 +15,7 @@
 
 body {
 	font-family: "MRV Grot Medium Regular";
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.25em;
 	color: var(--main-color);
 }
@@ -24,7 +25,7 @@ h1 {
 	line-height: 1.25em;
 	font-weight: normal;
 	font-style: normal;
-	margin-bottom: .5em;
+	margin-bottom: .25em;
 }
 
 h2 {
@@ -63,12 +64,12 @@ a {
 .header {
 	position: fixed;
 	width: 100vw;
-	padding: .75em 1.25em;
-	background: white;
-	filter: drop-shadow(0 0 10px rgba(73, 69, 245, .3));
+	padding: .6em;
+	background: var(--main-background-color);
+	filter: drop-shadow(0 0 10px rgba(229,229,229, 1));
 	display: grid;
 	grid-template-columns: 90px auto 145px 145px;
-	column-gap: .75em;
+	column-gap: 1em;
 	z-index: 10;
 }
 
@@ -106,7 +107,7 @@ a {
 }
 
 .button-left {
-	background: linear-gradient(90deg, rgba(209,208,255,0.007440476190476164) 0%, rgba(209,208,255,1) 100%);
+	background: linear-gradient(90deg, rgba(29,229,229,0) 0%, rgba(229,229,229,1) 100%);
 }
 
 .button-middle {
@@ -114,23 +115,23 @@ a {
 }
 
 .button-right {
-	background: linear-gradient(90deg, rgba(209,208,255,1) 0%, rgba(209,208,255,0.007440476190476164) 100%);
+	background: linear-gradient(90deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
 }
 
 .menu__item:hover .button-middle, 
 .menu__item--active .button-middle {
 	background: var(--highlight-1-dark);
-	color: white;
+	color: var(--main-background-color);
 }
 
 .menu__item:hover .button-left, 
 .menu__item--active .button-left {
-	background: linear-gradient(90deg, rgba(73,69,245,0) 0%, rgba(73,69,245,1) 100%);
+	background: linear-gradient(90deg, rgba(120,118,128,0) 0%, rgba(120,118,128,1) 100%);
 }
 
 .menu__item:hover .button-right, 
 .menu__item--active .button-right {
-	background: linear-gradient(90deg, rgba(73,69,245,1) 0%, rgba(73,69,245,0) 100%);
+	background: linear-gradient(90deg, rgba(120,118,128,1) 0%, rgba(120,118,128,0) 100%);
 }
 
 .cam {
@@ -162,8 +163,8 @@ a {
 
 .photo-dump {
 	display: grid;
-	grid-column-gap: 1.25em;
-	grid-row-gap: 3.5em;
+	grid-column-gap: .75em;
+	grid-row-gap: 3em;
 }
 
 .photo-dump--6-col {
@@ -178,42 +179,42 @@ a {
 .modal--2-col, 
 .modal--3-col, 
 .modal--2-col--start-2 {
-	padding: 8em 1.25em 1.25em 1.25em;
+	padding: 7em .75em .75em .75em;
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
 
 .modal--1-col {
-	background: white;
+	background: var(--main-background-color);
 	grid-column: 1;
 }
 
 .modal--2-col {
-	background: white;
+	background: var(--main-background-color);
 	grid-column: 1 / span 2;
 }
 
 .modal--2-col--start-2 {
 	grid-column: 2 / span 2;
 	background: var(--main-color);
-	grid-row-gap: 1.25em;
+	grid-row-gap: .75em;
 }
 
 .modal--3-col {
-	background: white;
+	background: var(--main-background-color);
 	grid-column: 1 / span 3;
 }
 
 .section {
-	margin-bottom: 3.5em;
+	margin-bottom: 3em;
 }
 
 .section--2-col {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 1em;
-	grid-row-gap: 3.5em;
+	grid-row-gap: 3em;
 }
 
 ol > li {
@@ -246,16 +247,16 @@ ul.work__list > li {
 }
 
 .space-sm {
-	margin-bottom: 1em;
+	margin-bottom: .75em;
 }
 
 .space-md {
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 
 .active {
 	background: var(--highlight-1-dark);
-	color: white;
+	color: var(--main-background-color);
 }
 
 .full-width {
@@ -263,44 +264,7 @@ ul.work__list > li {
 }
 
 .white {
-	color: white;
-}
-
-.thumbnail__image, 
-.thumbnail__image-overlay, 
-.thumbnail__title {
-	width: 100%;
-}
-
-.thumbnail__image {
-	align-self: flex-end;
-}
-
-.thumbnail__image-overlay {
-	height: 4em;
-	background: transparent;
-	vertical-align: bottom;
-	align-self: flex-end;
-}
-
-.thumbnail:hover .thumbnail__image-overlay {
-	background: linear-gradient(180deg, rgba(215,255,100,0) 0%, rgba(215,255,100,1) 100%);
-}
-
-.thumbnail:hover .thumbnail__title {
-	background: var(--highlight-2);
-}
-
-.thumbnail__title {
-	padding: 0.5em;
-	background: white;
-}
-
-.thumbnail__image-container {
-	height: 33vw;
-	display: flex;
-	background-position: center;
-	background-size: cover;
+	color: var(--main-background-color);
 }
 
 .sunset {
@@ -343,7 +307,7 @@ video {
 	}
 
 	.modal--3-col {
-		background: white;
+		background: var(--main-background-color);
 		grid-column: 1 / span 1;
 	}
 
@@ -366,10 +330,6 @@ video {
 	.hide-on-mobile {
 		display: none;
 	}
-
-	.photo-dump {
-		grid-row-gap: .5em;
-	}
 }
 
 
@@ -387,7 +347,7 @@ video {
 	}
 
 	.modal--3-col {
-		background: white;
+		background: var(--main-background-color);
 		grid-column: 1 / span 2;
 	}
 
@@ -426,7 +386,7 @@ video {
 	}
 
 	.modal--3-col {
-		background: white;
+		background: var(--main-background-color);
 		grid-column: 1 / span 3;
 	}	
 
@@ -436,9 +396,5 @@ video {
 
 	.photo-dump--4-col {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-
-	.photo-dump {
-		grid-row-gap: 3.5em;
 	}
 }
