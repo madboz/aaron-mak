@@ -41,7 +41,6 @@ p {
 	line-height: 1.25em;
 	font-weight: normal;
 	font-style: normal;
-	max-width: 21em;
 }
 
 ul {
@@ -81,6 +80,10 @@ a {
 	height: 5em;
 	width: 5em;
 	object-fit: contain;
+}
+
+.header__bio {
+	max-width: 24em;
 }
 
 .link {
@@ -268,7 +271,7 @@ ul.work__list > li {
 }
 
 .sunset {
-	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%);
+	background: linear-gradient(0deg, rgba(255, 250, 250,1) 0%, rgba(255, 240, 245,1) 100%);
 }
 
 .test {
