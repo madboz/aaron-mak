@@ -20,21 +20,13 @@
 <header class="header">
   <div class="header__icon-container">
     <a href="index.html">
-      <img class="header__icon" src="assets/images/icons/info.svg">
+      <div class="header__icon-overlay"></div>
+      <img class="header__icon" src="assets/images/icons/black/info.svg">
     </a>
   </div>
 
   <div class="header__bio-container">
     <p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
-  </div>
-
-  <div class="header__data">
-    <ul>
-      <li class="data__date">Mon. Jan. 00, 0000</li>
-      <li class="data__time">00:00:00</li>
-      <li class="data__temp">0° C / 0° F</li>
-      <li class="data__cond">Clear</li>
-    </ul>
   </div>
 
   <div class="header__menu">
@@ -50,15 +42,24 @@
         </a>
       </li>
       <li>
-        <a class="menu__item" href="camera.html">
-          <div class="button-left">.</div><div class="button-middle">Camera</div><div class="button-right">.</div>
-        </a>
-      </li>
-      <li>
         <a class="menu__item--active" href="info.html">
           <div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
         </a>
       </li>
+      <li>
+        <a class="menu__item" href="camera.html">
+          <div class="button-left">.</div><div class="button-middle">Photos</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>&nbsp;</li>
+    </ul>
+  </div>
+
+    <div class="header__data">
+    <ul>
+      <li class="data__date">Mon. Jan. 00, 0000</li>
+      <li class="data__time">00:00:00</li>
+      <li class="data__weather">0° C / 0° F, Clear</li>
     </ul>
   </div>
 </header>
@@ -67,10 +68,11 @@
   <div class="modal modal--1-col">
     <div class="section">
       <div class="headline">
-        <h1>Contact</h1>
+        <h1 class="space-sm">Contact</h1>
         <div class="close-container">
           <a href="index.html">
-            <img class="close" src="assets/images/ui/close.svg">
+            <div class="close-overlay"></div>
+            <img class="close" src="assets/images/ui/black/close.svg">
           </a>
         </div>
       </div>
@@ -78,7 +80,7 @@
     </div>
 
     <div class="section">
-        <h1>Work experience</h1>
+        <h1 class="space-sm">Work experience</h1>
         <p class="space-sm">Gabriela Hearst<br>
           Freelance Womenswear Design Assistant 
         </p>
@@ -113,7 +115,7 @@
     </div>
 
     <div class="section">
-      <h1>Awards & Education</h1>
+      <h1 class="space-sm">Awards & Education</h1>
       <div class="timeline">
         <div class="tl__section">
           <div class="tl__left-col">
@@ -251,7 +253,7 @@
     </div>
 
     <div class="section">
-        <h1>About this site</h1>
+        <h1 class="space-sm">About this site</h1>
         <p>Like Aaron's work in fashion, the website's form and concept are influenced by his own experiences and identity.</p>
         <p>Special features include live footage of Aaron's family farm; seasonal color palettes; an anecdotal Camera Roll section that depicts banal yet influential moments in his daily activities; and custom UI elements that reference musical notation and Chinese imagery.</p>
     </div>

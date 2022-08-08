@@ -22,7 +22,7 @@ function updateTime(d) {
 }
 
 function updateDate(d) {
-	headerDate.innerText = d.day + ". " + d.month + ". " + d.date + ", " + d.year;
+	headerDate.innerText = d.day + ", " + d.month + " " + d.date + ", " + d.year;
 }
 
 function updateCam(d) {

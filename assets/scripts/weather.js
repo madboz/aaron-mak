@@ -1,5 +1,4 @@
-const headerTemp = document.getElementsByClassName("data__temp")[0];
-const headerCond = document.getElementsByClassName("data__cond")[0];
+const headerWeather = document.getElementsByClassName("data__weather")[0];
 
 function parseWeather(w) {
 	const dataTempF = w.main.temp;
@@ -7,8 +6,7 @@ function parseWeather(w) {
 	const dataTemp = Math.round(dataTempC) + "° C / " + Math.round(dataTempF) + "° F";
 	const dataCond =  w.weather[0].main;
 
-	headerTemp.innerHTML = dataTemp;
-	headerCond.innerHTML = dataCond;
+	headerWeather.innerHTML = dataTemp + ", " + dataCond;
 };
 
 

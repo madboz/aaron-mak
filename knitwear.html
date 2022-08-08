@@ -17,49 +17,50 @@
 <body>
 
 <header class="header">
-	<div class="header__icon-container">
-		<a href="index.html">
-			<img class="header__icon" src="assets/images/icons/knitwear.svg">
-		</a>
-	</div>
+  <div class="header__icon-container">
+    <a href="index.html">
+      <div class="header__icon-overlay">test</div>
+      <img class="header__icon" src="assets/images/icons/black/knitwear.svg">
+    </a>
+  </div>
 
-	<div class="header__bio-container">
-		<p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
-	</div>
+  <div class="header__bio-container">
+    <p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
+  </div>
 
-	<div class="header__data">
-		<ul>
-			<li class="data__date">Mon. Jan. 00, 0000</li>
-			<li class="data__time">00:00:00</li>
-			<li class="data__temp">0° C / 0° F</li>
-			<li class="data__cond">Clear</li>
-		</ul>
-	</div>
+  <div class="header__menu">
+    <ul>
+      <li>
+        <a class="menu__item--active" href="work.html">
+          <div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="press.html">
+          <div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="info.html">
+          <div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="camera.html">
+          <div class="button-left">.</div><div class="button-middle">Photos</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>&nbsp;</li>
+    </ul>
+  </div>
 
-	<div class="header__menu">
-		<ul>
-			<li>
-				<a class="menu__item--active" href="work.html">
-					<div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item" href="press.html">
-					<div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item" href="camera.html">
-					<div class="button-left">.</div><div class="button-middle">Camera</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item" href="info.html">
-					<div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
-				</a>
-			</li>
-		</ul>
-	</div>
+    <div class="header__data">
+    <ul>
+      <li class="data__date">Mon. Jan. 00, 0000</li>
+      <li class="data__time">00:00:00</li>
+      <li class="data__weather">0° C / 0° F</li>
+    </ul>
+  </div>
 </header>
 
 <main class="main">
@@ -68,76 +69,127 @@
 			<h1 class="main__headline">Work</h1>
 			<div class="close-container">
 				<a href="index.html">
-					<img class="close" src="assets/images/ui/close.svg">
+					<div class="close-overlay"></div>
+					<img class="close" src="assets/images/ui/black/close.svg">
 				</a>
 			</div>
 		</div>
 
 		<div class="section">
-			<h1>Archive</h1>
+			<h1 class="space-sm">Archive</h1>
+			<div class="badge"></div>
 			<ul class="work__list">
-				<li><a class="active" href="knitwear.html">Knitwear</a></li>
-				<li><a class="link" href="vizmanos.html">Gerardo Vizmanos</a></li>
-				<li><a class="link" href="weaving.html">Weaving for Two</a></li>
-				<li><a class="link" href="leather.html">Leather project</a></li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link link--active" href="knitwear.html">Knitwear</a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="vizmanos.html">Gerardo Vizmanos</a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="weaving.html">Weaving for Two </a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="leather.html">Leather Project</a>
+				</li>
 			</ul>
 		</div>
 
 		<div class="section">
-			<h1>Freelance</h1>
+			<h1 class="space-sm">Freelance</h1>
 			<ul class="work__list">
-				<li><a class="link" href="rider.html">Jason Rider</a></li>
-				<li><a class="link" href="lim.html">Sarah Lim</a></li>
-				<li><a class="link" href="crookes.html">Amy Crookes</a></li>
-				<li><a class="link" href="thombrowne.html">Thom Browne</a></li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="rider.html">Jason Rider</a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="lim.html">Sarah Lim</a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="crookes.html">Amy Crookes</a>
+				</li>
+				<li>
+					<div class="bullet">
+						<div class="bullet-overlay"></div>
+						<img class="bullet" src="assets/images/ui/black/bullet.svg">
+					</div>
+					<a class="link" href="thombrowne.html">Thom Browne</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="modal modal--2-col--start-2">
-		<div class="headline">
+		<div class="headline space-md">
 			<h1 class="white">Knitwear</h1>
 			<div class="close-container">
 				<a href="work.html">
-					<img class="close" src="assets/images/ui/close-white.svg">
+					<div class="close-overlay"></div>
+					<img class="close" src="assets/images/ui/black/close-white.svg">
 				</a>
 			</div>
 		</div>
 		<div class="photo-dump photo-dump--4-col">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-1-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-2-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-3-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-4-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-5-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-6-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-7-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-8-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-9-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-10-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-11-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-12-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-13-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-14-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-15-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-16-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-17-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-18-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-19-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-20-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-21-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-22-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-23-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-24-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-25-aaronmak.png">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-26-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-27-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-28-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-29-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-30-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-31-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-32-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-33-aaronmak.jpeg">
-			<img class="full-width space-sm" src="assets/images/content/work/knitwear/knitwear-34-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-1-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-2-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-3-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-4-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-5-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-6-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-7-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-8-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-9-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-10-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-11-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-12-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-13-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-14-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-15-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-16-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-17-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-18-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-19-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-20-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-21-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-22-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-23-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-24-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-25-aaronmak.png">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-26-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-27-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-28-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-29-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-30-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-31-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-32-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-33-aaronmak.jpeg">
+			<img class="full-width space-rg" src="assets/images/content/work/knitwear/knitwear-34-aaronmak.jpeg">
 		</div>
 	</div>
 </main>

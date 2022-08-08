@@ -16,44 +16,50 @@
 </head>
 <body>
 <header class="header">
-	<div class="header__icon-container">
-		<a href="index.html"><img class="header__icon" src="assets/images/icons/weaving.svg"></a>
-	</div>
-	<div class="header__bio-container">
-		<p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
-	</div>
-	<div class="header__data">
-		<ul>
-			<li class="data__date">Mon. Jan. 00, 0000</li>
-			<li class="data__time">00:00:00</li>
-			<li class="data__temp">0° C / 0° F</li>
-			<li class="data__cond">Clear</li>
-		</ul>
-	</div>
-	<nav class="header__menu">
-		<ul>
-			<li>
-				<a class="menu__item cursor" href="work.html">
-					<div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item--active" href="press.html">
-					<div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item" href="camera.html">
-					<div class="button-left">.</div><div class="button-middle">Camera</div><div class="button-right">.</div>
-				</a>
-			</li>
-			<li>
-				<a class="menu__item" href="info.html">
-					<div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
-				</a>
-			</li>
-		</ul>
-	</nav>
+  <div class="header__icon-container">
+    <a href="index.html">
+      <div class="header__icon-overlay"></div>
+      <img class="header__icon" src="assets/images/icons/black/recens.svg">
+    </a>
+  </div>
+
+  <div class="header__bio-container">
+    <p class="header__bio"><a class="bio__name link" href="index.html">Aaron Mak</a> is a womenswear and footwear designer based in New York City. He holds a BFA in fashion design from Parsons and a BA in economics from Eugene Lang College.</p>
+  </div>
+
+  <div class="header__menu">
+    <ul>
+      <li>
+        <a class="menu__item" href="work.html">
+          <div class="button-left">.</div><div class="button-middle">Work</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item--active" href="press.html">
+          <div class="button-left">.</div><div class="button-middle">Press</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="info.html">
+          <div class="button-left">.</div><div class="button-middle">Info</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>
+        <a class="menu__item" href="camera.html">
+          <div class="button-left">.</div><div class="button-middle">Photos</div><div class="button-right">.</div>
+        </a>
+      </li>
+      <li>&nbsp;</li>
+    </ul>
+  </div>
+
+    <div class="header__data">
+    <ul>
+      <li class="data__date">Mon. Jan. 00, 0000</li>
+      <li class="data__time">00:00:00</li>
+      <li class="data__weather">0° C / 0° F</li>
+    </ul>
+  </div>
 </header>
 
 <main class="main">
@@ -62,7 +68,8 @@
 			<h1>Press</h1>
 			<div class="close-container">
 				<a href="index.html">
-					<img class="close" src="assets/images/ui/close.svg">
+					<div class="close-overlay"></div>
+					<img class="close" src="assets/images/ui/black/close.svg">
 				</a>
 			</div>
 		</div>
@@ -93,7 +100,7 @@
 				<h2>In print</h2>
 				<ol>
 					<li>
-						<a href="recens.html" class="active">Olsen, Elise By. "Aaron Mak." Recens Paper: Issue 7, 1 Jan. 2017, pp. 13–15.</a>
+						<a class="link link--active" href="recens.html">Olsen, Elise By. "Aaron Mak." Recens Paper: Issue 7, 1 Jan. 2017, pp. 13–15.</a>
 					</li>
 				</ol>
 			</div>
@@ -101,20 +108,20 @@
 	</div>
 
 	<div class="modal modal--2-col--start-2">
-		<div class="headline">
+		<div class="headline space-md">
 			<h1 class="white">Recens Paper</h1>
 
 			<div class="close-container">
 				<a href="press.html">
-					<img class="close" src="assets/images/ui/close-white.svg">
+					<img class="close" src="assets/images/ui/black/close-white.svg">
 				</a>
 			</div>
 		</div>
 
-		<img class="full-width" src="assets/images/content/press/recens-1.jpg">
-		<img class="full-width" src="assets/images/content/press/recens-2.jpg">
-		<img class="full-width" src="assets/images/content/press/recens-3.jpg">
-		<img class="full-width" src="assets/images/content/press/recens-4.jpg">
+		<img class="full-width space-rg" src="assets/images/content/press/recens-1.jpg">
+		<img class="full-width space-rg" src="assets/images/content/press/recens-2.jpg">
+		<img class="full-width space-rg" src="assets/images/content/press/recens-3.jpg">
+		<img class="full-width space-rg" src="assets/images/content/press/recens-4.jpg">
 	</div>
 </main>
 
