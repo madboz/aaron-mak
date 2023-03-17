@@ -1,28 +1,38 @@
 @font-face {
-  font-family: mrv-grot;
-  src: url(../fonts/mrv-grot.ttf);
+  font-family: maria;
+  src: url(../fonts/maria.ttf);
+}
+
+:root {
+	--space-sm: 1.425rem;
+	--space-md: 1.625rem;
+	--space-lg: 2.5rem;
+	--space-xl: 3.75rem;
+	--space-xxl: 7.5rem;
 }
 
 p, h1 {
-  font-family: mrv-grot;
-  font-size: 26px;
-  line-height: 1.18em;
+  font-family: maria;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.15em;
+  letter-spacing: 0.01em;
   color: white;
-  -webkit-text-stroke-width: .35px;
-  -webkit-text-stroke-color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
-	margin-bottom: 28px;
+	margin-bottom: var(--space-sm);
 }
 
 p:last-of-type {
-	margin-bottom: 40px;
+	margin-bottom: 0;
 }
 
 h1 {
-	text-indent: 80px;
-	margin-bottom: 30px;
+	text-indent: var(--space-xl);
+	text-transform: uppercase;
+	margin-bottom: var(--space-md);
 }
 
 .cam {
@@ -42,10 +52,12 @@ h1 {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 120px;
+	grid-column-gap: var(--space-xxl);
 	box-sizing: border-box;
-	height: calc(100vh - 40px);
-	margin: 40px 40px 0;
+	height: 100vh;
+	max-width: 1440px;
+	padding: var(--space-lg);
+	background: rgba(0, 0, 0, .25);
 }
 
 .right {
@@ -56,11 +68,21 @@ h1 {
 	display: none;
 }
 
-.grid {
-	max-width: 1440px;
+@media (max-width: 1180px) {
+	:root {
+		--space-sm: 1.25rem;
+		--space-md: 1.25rem;
+		--space-lg: 2.125rem;
+		--space-xl: 3rem;
+		--space-xxl: 5rem;
+	}
+
+	p, h1 {
+		font-size: 1.25rem;
+	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -68,11 +90,15 @@ h1 {
 	}
 
 	.left {
-		margin-bottom: 28px;
+		margin-bottom: var(--space-xl);
 	}
 
 	.right {
 		height: 100%;
 		overflow: visible;
+	}
+
+	.left, .right {
+		max-width: 31rem;
 	}
 }
